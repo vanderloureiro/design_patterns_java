@@ -1,13 +1,10 @@
 package com.br;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.br.strategy.MainStrategy;
+
+public class App {
+
+    public static void main( String[] args ) {
+        new MainStrategy();
     }
 }
