@@ -24,7 +24,9 @@ class NotificadorFactory {
             default:
                 return new NotificadorSinalDeFumaca();
         }
+
     }
+
 }
 
 interface Notificador {
@@ -34,7 +36,6 @@ interface Notificador {
 
 class NotificadorEmail implements Notificador {
 
-    @Override
     public void enviarNotificacao() {
         System.out.println("Exemplo por EMAIL");
     }
@@ -42,7 +43,6 @@ class NotificadorEmail implements Notificador {
 
 class NotificadorSms implements Notificador {
 
-    @Override
     public void enviarNotificacao() {
         System.out.println("Exemplo por SMS");
     }
@@ -50,7 +50,6 @@ class NotificadorSms implements Notificador {
 
 class NotificadorSinalDeFumaca implements Notificador {
 
-    @Override
     public void enviarNotificacao() {
         System.out.println("Exemplo por sinal de fumaça");
     }
